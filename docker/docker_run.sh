@@ -1,0 +1,2 @@
+xhost + 
+docker run -it --privileged --device=/dev/ttyACM0 --device=/dev/ttyACM1 --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --mount type=bind,source=$HOME/ros_tutorial_for_snowbots/workfiles,target=/workfiles ros_melodic_tutorial
